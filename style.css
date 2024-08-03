@@ -42,6 +42,7 @@ h1 {
     margin: 0 auto;
     padding: 4em 8em;
     text-align: left;
+    column-gap: 8%; 
 }
 
 nav {
@@ -65,15 +66,28 @@ nav>a:hover {
     transform: translateX(20px);
 }
 
-.columns {
-}
-
 .contact {
     margin-top: 50px;
 }
 
 .contact>a {
     margin: 2px;
+}
+
+@media (max-width: 1000px) {
+    #app {
+        grid-template-columns: none;
+    }
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2.5em;
+    }
+
+    #app {
+        padding: 4em;
+    }
 }
 
 @media (prefers-color-scheme: light) {
