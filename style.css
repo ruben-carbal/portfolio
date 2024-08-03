@@ -32,6 +32,7 @@ img {
 h1 {
     font-size: 3.2em;
     line-height: 1.1;
+    margin-bottom: -0.5rem;
 }
 
 #app {
@@ -43,10 +44,32 @@ h1 {
     text-align: left;
 }
 
+nav {
+    display: flex;
+    flex-direction: column;
+    margin: 15px 0;
+
+}
+
+nav>a {
+    width: 50%;
+    text-decoration: none;
+    color: gray;
+    font-size: 1em;
+    font-weight: bolder;
+    padding: 5px;
+}
+
+nav>a:hover {
+    color: white;
+    transform: translateX(20px);
+}
+
 .columns {
 }
 
 .contact {
+    margin-top: 50px;
 }
 
 .contact>a {
